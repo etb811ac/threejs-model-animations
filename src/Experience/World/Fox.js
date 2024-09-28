@@ -2,6 +2,7 @@ import * as THREE from 'three'
 
 export default class Fox{
     constructor(experience){
+        this.experience = experience
         this.scene = experience.scene
         this.resources = experience.resources
         this.time = experience.time
@@ -60,6 +61,8 @@ export default class Fox{
             this.debugFolder.add(debugObject, 'Idle')
             this.debugFolder.add(debugObject, 'Walking')
             this.debugFolder.add(debugObject, 'Running')
+
+            if(this.experience.sizes.width <= '500') this.debugFolder.close()
 
         }
 

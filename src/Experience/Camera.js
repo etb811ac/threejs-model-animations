@@ -26,7 +26,7 @@ export default class Camera {
         this.instance.position.set(-9, .1, 4)
         this.scene.add(this.instance)
 
-        gsap.to(this.instance.position, {x:9, y:1, z:8 , duration:7})
+        gsap.to(this.instance.position, {x:9, y:5, z:8 , duration:7})
     }
 
     setOrbitControls() {
