@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
+import gsap from 'gsap'
 
 export default class Camera {
     constructor(experience) {
@@ -22,8 +23,10 @@ export default class Camera {
             100
         )
 
-        this.instance.position.set(6, 4, 8)
+        this.instance.position.set(-9, .1, 4)
         this.scene.add(this.instance)
+
+        gsap.to(this.instance.position, {x:9, y:1, z:8 , duration:7})
     }
 
     setOrbitControls() {

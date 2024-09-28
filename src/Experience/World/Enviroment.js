@@ -32,7 +32,7 @@ export default class Enviroment {
 
     setEnviroment() {
         this.enviromentMap = {}
-        this.enviromentMap.intensity = .4
+        this.enviromentMap.intensity = .1
         this.enviromentMap.texture = this.resources.items.environmentMapTexture
         this.enviromentMap.colorSpace = THREE.SRGBColorSpace
 
@@ -52,6 +52,7 @@ export default class Enviroment {
 
         if(this.debug.active){
             this.debugFolder.add(this.enviromentMap, 'intensity', 0,4,0.001).name('Enviroment Intensity').onChange(this.enviromentMap.updateMaterial)
+            this.debugFolder.close()
         }
     }
 }
