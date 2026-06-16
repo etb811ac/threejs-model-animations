@@ -3,8 +3,11 @@
 <p align="center">An animated glTF Fox with switchable idle / walk / run clips, built on a clean, class-based Three.js architecture designed to scale beyond a single script file.</p>
 
 <p align="center">
-  <!-- TODO: replace with your deployed demo URL -->
-  🔗 <b>Live Demo:</b> <i>coming soon</i>
+  <a href="https://threejs-model-animation-eacuna.netlify.app/"><img src="https://img.shields.io/badge/▶%20Live%20Demo-Open-FF4D00?style=for-the-badge" alt="Live Demo"></a>
+</p>
+
+<p align="center">
+  <img src=".github/preview.gif" alt="Animated Fox model preview" width="640">
 </p>
 
 <p align="center">
